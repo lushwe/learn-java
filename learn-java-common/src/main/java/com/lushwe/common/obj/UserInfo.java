@@ -1,4 +1,4 @@
-package com.lushwe.serializable;
+package com.lushwe.common.obj;
 
 import lombok.Data;
 
@@ -8,7 +8,7 @@ import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
 /**
- * 说明：TODO 写点注释吧
+ * 说明：UserInfo对象
  *
  * @author Jack Liu
  * @date 2019-09-06 09:24
