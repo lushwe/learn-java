@@ -1,6 +1,7 @@
 package com.lushwe.serializable;
 
 import com.alibaba.fastjson.JSON;
+import com.lushwe.common.obj.UserInfo;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -9,7 +10,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 /**
- * 说明：TODO 写点注释吧
+ * 说明：序列化&反序列化测试
  *
  * @author Jack Liu
  * @date 2019-09-06 09:24
