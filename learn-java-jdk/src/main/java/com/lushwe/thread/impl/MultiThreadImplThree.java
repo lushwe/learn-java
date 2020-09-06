@@ -1,6 +1,7 @@
 package com.lushwe.thread.impl;
 
 import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
@@ -24,10 +25,19 @@ public class MultiThreadImplThree {
         t1.start();
         t2.start();
 
+        try {
+            System.out.println("task1.get()=" + task1.get());
+            System.out.println("task1.get()=" + task1.get());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
     }
 }
 
-class MyTaskThree implements Callable {
+class MyTaskThree implements Callable<Boolean> {
 
     @Override
     public Boolean call() throws Exception {
