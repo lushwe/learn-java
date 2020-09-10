@@ -34,6 +34,7 @@
         <module>learn-java-project</module>
         <module>learn-java-unsafe</module>
         <module>learn-java-classloader</module>
+        <module>learn-stock</module>
     </modules>
 
     <properties>
