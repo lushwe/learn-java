@@ -11,5 +11,13 @@
 
     <artifactId>learn-java-feign</artifactId>
 
+    <dependencies>
+        <!-- 引入feign相关jar -->
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-core</artifactId>
+            <version>8.18.0</version>
+        </dependency>
+    </dependencies>
 
 </project>
