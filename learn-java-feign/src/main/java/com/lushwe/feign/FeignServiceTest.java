@@ -24,5 +24,8 @@ public class FeignServiceTest {
         String userName = feignUserService.getUserName(1L);
         System.out.println(userName);
 
+        // 总结：
+        // 1、直接使用Feign调用远程接口
+        // 2、可以像调用本地服务一样调用远程接口
     }
 }
