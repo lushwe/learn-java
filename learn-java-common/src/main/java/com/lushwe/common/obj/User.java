@@ -2,7 +2,10 @@ package com.lushwe.common.obj;
 
 import lombok.Data;
 
-import java.io.Serializable;
+import java.io.IOException;
+import java.io.NotSerializableException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 /**
  * 说明：User对象
@@ -12,14 +15,22 @@ import java.io.Serializable;
  * @since 0.1
  */
 @Data
-public class User implements Serializable {
+public class User extends BaseUser {
 
     private Long id;
     private String name;
     private int age;
     private String remark;
 
-    public static String value1 = "静态";
-    public transient String value2 = "临时";
+    public static String value1 = "静态变量";
+    public transient String value2 = "瞬态变量";
+
+//    private void writeObject(ObjectOutputStream oos) throws IOException {
+//        throw new NotSerializableException("[" + this.getClass().getName() + "]不支持序列化");
+//    }
+
+//    private void readObject(ObjectInputStream ois) throws IOException {
+//        throw new NotSerializableException("[" + this.getClass().getName() + "]不支持反序列化");
+//    }
 
 }
