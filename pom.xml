@@ -35,6 +35,8 @@
         <module>learn-java-unsafe</module>
         <module>learn-java-classloader</module>
         <module>learn-stock</module>
+        <module>learn-java-hutool</module>
+        <module>learn-java-feign</module>
     </modules>
 
     <properties>
