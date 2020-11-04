@@ -27,6 +27,8 @@ public class CollectionsTest {
         System.out.println("测试 reverse");
         reverse(list);
 
+        System.out.println("测试 shuffle");
+        shuffle(list);
     }
 
     /**
@@ -37,6 +39,17 @@ public class CollectionsTest {
     public static void reverse(List<String> list) {
         System.out.println(JSON.toJSONString(list, true));
         Collections.reverse(list);
+        System.out.println(JSON.toJSONString(list, true));
+    }
+
+    /**
+     * 打乱列表
+     *
+     * @param list
+     */
+    public static void shuffle(List<String> list) {
+        System.out.println(JSON.toJSONString(list, true));
+        Collections.shuffle(list);
         System.out.println(JSON.toJSONString(list, true));
     }
 }
